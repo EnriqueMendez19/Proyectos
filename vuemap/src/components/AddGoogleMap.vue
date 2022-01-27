@@ -2,7 +2,7 @@
   <div>
     <div>
       <h2>search and add a mark</h2>
-      <GmapAutoComplete
+      <GmapAutocomplete
       @place_changed="setPlace"
       />
       </div>
