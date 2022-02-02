@@ -1,0 +1,27 @@
+<template>
+  <div id="app">
+    <div id="nav" v-if="account">
+
+      <router-link to="/">Home</router-link> |
+      <a @click="logout">About</a>
+    </div>
+    <router-view />
+  </div>
+</template>
+<script>
+import {accountService} from '@/_services';
+export default {
+  data() {
+    return {
+      account:null,
+
+    }
+  },
+  created(){
+    accountService.account.subscribe((x)=>this.account=x);
+  },
+  methods: {
+    logout:accountService.logout,
+  },
+}
+</script>
