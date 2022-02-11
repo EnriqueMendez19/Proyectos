@@ -22,6 +22,6 @@ export default {
   },
   methods: {
     logout:accountService.logout,
-  },
+  }
 }
 </script>
