@@ -23,7 +23,7 @@ export default {
       products: [
         {
           id: "01",
-          name: "Estufa",
+          name: "Cuadro de pintura",
           price: "15400",
           thumbnail: "https://picsum.photos/400",
         },
@@ -65,7 +65,7 @@ export default {
                 {
                   description: this.products.name,
                   amount: {
-                    currency_code: "USD",
+                    currency_code: 'USD',
                     value: this.products.price,
                   },
                 },
